@@ -1,0 +1,77 @@
+.espacio{
+  
+    height: 150px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box div{
+    border: 5px dashed #ddd;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.area.active{
+    background-color: #b8d4fe;
+    color:black;
+    border: 2px dashed #618ac9;
+}
+
+.area h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+.area span{
+    font-size: 25px;
+    color: #000;
+}
+
+.area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    border:0;
+    outline: none;
+    background-color: #5256ad;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border:solid 1px #ddd;
+}
+
+#preview{
+    margin-top:10px;
+}
+
+.status-text{
+    padding:0 10px;
+}
+
+.success{
+    color:#52ad5a;
+}
+
+.failure{
+    color:#ff0000;
+}
+
+
+
+

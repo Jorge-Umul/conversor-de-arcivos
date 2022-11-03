@@ -1,0 +1,117 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'imagenes/favicon.png'%}">
+    <title>El mejor convertidor de archivos</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="p-3 m-0 border-0 bd-example">
+
+   
+    <nav class="navbar navbar-expand-lg narvar-light" style="background-color: #edf6fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'index' %}">      
+                <img class="ing-responsive" src="{%static 'imagenes/conversor.png'%}" height="40" width="45">           
+            </a>
+            
+            <!--aqui ponder una imageen-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'index' %} ">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">INICIO</font>
+                            </font>
+                        </a>
+                
+    
+
+
+
+            <!--DESPLIEGE DEL CAMBIO DE FORMATO A PDF-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            CAMBIO DE FORMATO A PDF
+                        </font>
+                    </font>
+                </a>
+                <ul class="dropdown-menu">
+                    <!--AQUI PONDRE LOS LINKS A MIS DIFERENTES MODULOS-->
+                    <li><a class="dropdown-item" href=" {% url 'jpg_a_pdf' %} ">jpg a pdf</a></li>
+                    <li><a class="dropdown-item" href="{%url 'png_a_pdf'%} ">png_a_pdf</a></li> 
+                    <li><a class="dropdown-item" href="{%url 'Gif_a_pdf'%} ">Gif_a_pdf</a></li> 
+                    <li><a class="dropdown-item" href="{%url 'txt_a_pdf'%} ">txt_a_pdf</a></li> 
+                    <li><a class="dropdown-item" href="{%url 'jpeg_a_pdf'%} ">jpeg_a_pdf</a></li> 
+                    <li><a class="dropdown-item" href="{%url 'tiff_a_pdf'%} ">tiff_a_pdf</a></li> 
+                </ul>
+            </li>
+            
+    
+
+
+
+
+            <!--CAMBIO DE IMAGENES A DIFERENTES FORMATOS-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Desplegable
+                        </font>
+                    </font>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            
+
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Desplegable
+                        </font>
+                    </font>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+          
+
+
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- End Example Code -->
+  </body>
+</html>
